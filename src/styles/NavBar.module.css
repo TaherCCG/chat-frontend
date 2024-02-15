@@ -1,6 +1,21 @@
 .NavBar {
     background-color: #ffffff;
     border: 1px solid #F5F5F5;
-    font-family: 'Athiti', sans-serif;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: end;
   }
 
+.NavMenuLogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.NavMenuLogo p{
+    margin: 0;
+}
+
+.NavLinks i{
+    padding: 5px;
+}

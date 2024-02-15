@@ -6,22 +6,25 @@ import styles from "../styles/NavBar.module.css";
 const NavBar = () => {
   return (
     <Navbar expand="md" fixed="top" className={styles.NavBar}>
-      <Container >
-        <Navbar.Brand>
+
+        <Navbar.Brand className={styles.NavMenuLogo}>
           <img src={logo} alt="logo" height="45" />
+          <p>Ask Cupid</p>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="m-3"/>
+        
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto text-left">
+          <Nav className="ms-auto">
             <Nav.Link>
-              <i className="fas fa-sign-in-alt"></i>Sign in
+              <i className="fas fa-sign-in-alt m-1"></i>Sign in
             </Nav.Link>
             <Nav.Link>
-              <i className="fas fa-user-plus"></i>Sign up
+              <i className="fas fa-user-plus m-1"></i>Sign up
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
+
     </Navbar>
   );
 };
