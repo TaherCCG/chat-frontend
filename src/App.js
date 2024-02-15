@@ -1,19 +1,17 @@
-import logo from './cupid.png';
-import './App.css';
+import styles from './App.css';
+import NavBar from "./components/NavBar";
+import LandingPage from './pages/LandingPage';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ask help from Cupid?
-        </a>
-      </header>
+      <NavBar />
+
+      <Container className={styles.Main}>
+        <LandingPage />
+      </Container>
+
     </div>
   );
 }
