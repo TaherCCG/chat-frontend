@@ -1,10 +1,10 @@
 .App {
   text-align: center;
   background-color: #ece9c1;
-  min-height: 100vh;
+  min-height: 200vh;
 }
 
 .Main {
-  padding-top: 100px;  
+  padding-top: 100px;
 }
 
