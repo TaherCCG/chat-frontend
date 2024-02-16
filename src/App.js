@@ -5,6 +5,7 @@ import {Route, Switch} from 'react-router-dom';
 import LandingPage from './pages/home/LandingPage';
 import SignUpForm from "./pages/auth/SignUpForm";
 import SignInForm from "./pages/auth/SignInForm";
+import './api/axiosDefault';
 
 function App() {
   return (
