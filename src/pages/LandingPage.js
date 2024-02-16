@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
 import logo from "../assets/logo.png";
 import styles from "../styles/LandingPage.module.css";
 
@@ -8,8 +9,11 @@ const LandingPage = () => {
     <div className= {styles.LandingArea}>
         <img src={logo} className={styles.AppLogo} alt="logo" />
         <p>Do you want to ask help from Cupid?</p>
-        <Button href="" variant="secondary">Login</Button>
-        <Button href="" variant="signup">Signup</Button>
+        <Container >
+          <Button href="" variant="secondary" className="m-2">Login</Button>
+          <Button href="" variant="secondary"className="m-2">Signup</Button>
+        </Container>
+
     </div>
   );
 };
