@@ -1,15 +1,21 @@
-import styles from './App.css';
+import styles from './App.module.css';
 import NavBar from "./components/NavBar";
-import LandingPage from './pages/LandingPage';
-import { Container } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import {Route, Switch} from 'react-router-dom';
+import LandingPage from './pages/home/LandingPage';
+import SignUpForm from "./pages/auth/SignUpForm";
+import SignInForm from "./pages/auth/SignInForm";
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <NavBar />
-
-      <Container className={styles.Main}>
-        <LandingPage />
+        <Container className={styles.Main}>
+          <Switch>
+            <Route exact path="/" render={() => <LandingPage />}/>
+            <Route exact path="/signin" render={() => <SignInForm />} />
+            <Route exact path="/signup" render={() => <SignUpForm />} />
+          </Switch>     
       </Container>
 
     </div>

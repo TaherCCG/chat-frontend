@@ -1,8 +1,8 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import logo from "../assets/logo.png";
-import styles from "../styles/LandingPage.module.css";
+import logo from "../../assets/logo.png";
+import styles from "../../styles/LandingPage.module.css";
 
 const LandingPage = () => {
   return (
