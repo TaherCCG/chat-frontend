@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-
+import logo from "../assets/logo.png";
+import appStyle from "../styles/ChatGptRequest.module.css";
 const ChatGptRequest= () => {
 
   const [question, setQuestion] = useState("");
@@ -26,7 +27,13 @@ const ChatGptRequest= () => {
   };
 
   return (
-    <div>
+
+
+    <div className={appStyle.Wrapper}>
+      <div>
+          <img src={logo} className={appStyle.AppLogo} alt="logo" />
+          <p>What would you like to know?</p>
+      </div>
       <form onSubmit={handleSubmit}>
         <br />
         <label>
