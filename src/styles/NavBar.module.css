@@ -3,13 +3,13 @@
     border: 1px solid #F5F5F5;
     display: flex;
     justify-content: space-between !important;
-    align-items: end;
+    align-items: flex-end;
   }
 
 .NavMenuLogo{
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .NavMenuLogo p{
