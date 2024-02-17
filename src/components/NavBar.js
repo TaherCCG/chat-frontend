@@ -41,6 +41,14 @@ const NavBar = () => {
                 <i className="fas fa-sign-in-alt m-1"></i>Sign up
             </NavLink>
 
+            <NavLink
+                to="/myprofile"
+                className={styles.NavLink}
+                activeClassName={styles.Active}
+            >
+                <i className="fas fa-sign-in-alt m-1"></i>My Profile
+            </NavLink>
+
           </Nav>
         </Navbar.Collapse>
 
