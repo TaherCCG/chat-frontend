@@ -8,6 +8,7 @@ import SignInForm from "./pages/auth/SignInForm";
 import './api/axiosDefault';
 import MyProfile from './pages/profile/MyProfile';
 import EditProfile from './pages/profile/EditProfile';
+import ChatGptRequest from './components/ChatGptRequest';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/signup" render={() => <SignUpForm />} />
             <Route exact path="/myprofile" render={() => <MyProfile />} />
             <Route exact path="/editprofile" render={() => <EditProfile />} />
+            <Route exact path="/chatgptrequest" render={() => <ChatGptRequest />} />
           </Switch>     
       </Container>
 
