@@ -212,7 +212,13 @@ Allow users to change or update their chosen song for a dynamic and personalized
 
 ### Design
 
-<a id="features"></a>
+- We've employed this Color Palette to create a gentle aesthetic and infuse a romantic touch into the design
+
+<br>
+<img src="src/assets/images/colour-palette.png" alt="Color Palette" width="400" >
+<br>
+<br>
+
 
 #  Features
 
@@ -250,4 +256,41 @@ Dive into the heart of the experience on our Profile Page — the canvas where y
   - The AI gets to work when you feed it the details. Craft comprehensive profiles, and witness how the AI transforms them into delightful surprises, making every interaction with your profile special and unique.
 
 This Profile Page is not just about entering information; it's about curating experiences and connecting with your loved ones in a way that's uniquely yours.
+
+<a id="language"></a>
+
+# Language
+
+<a id="tools"></a>
+
+### Tools
+
+<a id="frameworks-libaries"></a>
+
+### Frameworks & Libaries
+
+<a id="testing"></a>
+
+# Testing
+
+<a id="manual-testing"></a>
+
+### Manual Testing
+
+ <a id="lighthouse"></a>
+
+  ### Lighthouse
+
+  <a id="browser-test"></a>
+
+  ### Browser Test
+
+ <a id="validation"></a>
+
+  ### Validation
+
+  <a id="bugs "></a>
+
+### Bugs
+
 
