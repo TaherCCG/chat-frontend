@@ -102,3 +102,36 @@
     background: #ec5267;
 }
 
+.Response {
+    position: fixed;
+    top: 40%;
+    background-color: #F7EF86;
+    color: black;
+    width: 60%;
+    max-height: 50%;
+    overflow-y: auto;
+    font-family: Calligraffitti;
+    font-size: 18px;
+    padding: 20px;
+    box-shadow: 10px 5px 5px rgb(177, 177, 177);
+  }
+
+.Response button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    background-color: #FFA1AC;
+}
+
+.Response button i{
+    font-size: X-large;
+}
+
+.Response button:hover{
+    background-color:#DE5C6E;
+}
