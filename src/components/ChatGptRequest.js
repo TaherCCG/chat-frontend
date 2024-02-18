@@ -37,12 +37,13 @@ const ChatGptRequest = () => {
 
   const closeAnswerBox = async () => {
     setQuestionUploaded(false);
+    setQuestionSent(false);
   }
 
   return (
 
     <Row className={appStyles.Row}>
-      <Col className="my-auto py-2 p-md-2" md={8} lg={6}>
+      <Col className="p-md-2" md={8} lg={6}>
         <Container className={`${appStyles.Content} p-4`}>
           <h1 className={appStyles.Header}>Ask a Question</h1>
 
@@ -154,7 +155,7 @@ const ChatGptRequest = () => {
             </Form.Group>
             {questionSent ? (
               <Button className={appStyles.Button} disabled>
-                Asking
+                Asking...
               </Button>):(
               <Button type="submit" className={appStyles.Button}><img src={logo} alt="logo"/>
               Ask Cupid
