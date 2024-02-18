@@ -1,7 +1,9 @@
 # Welcome to Ask Cupid :heart:
+
 <p style="display: flex ;align-items: center; font-size: 24px;"><img src="src/cupid.png"  width="150"> Ask Cupid </p>
 
 <a id=introduction></a>
+
 # Team2's Hackathon App
 
 Welcome to Team2's app for the Hackathon competition — an extraordinary venture that aims to elevate your connections and redefine your gifting experiences. Our app goes beyond the ordinary, providing tailored suggestions for both gifts and dreamy holiday destinations.
@@ -11,6 +13,7 @@ Welcome to Team2's app for the Hackathon competition — an extraordinary ventur
 ## What Ask Cupid Offers:
 
 - **Tailored Gift Suggestions:**
+
   - Receive personalized recommendations for gifts that will leave a lasting impression.
 
 - **Dreamy Holiday Destinations:**
@@ -21,8 +24,6 @@ Welcome to Team2's app for the Hackathon competition — an extraordinary ventur
 What are you waiting for? Sign up now, enter your partner's information, and let Ask Cupid be the catalyst for your next unforgettable experience. Embrace the journey, connect deeply, and make every moment count!
 
 **Ready to create magic? Join us and let's make this Hackathon a journey to remember!**
-
-
 
 # Content
 
@@ -44,6 +45,11 @@ What are you waiting for? Sign up now, enter your partner's information, and let
 - [Features](#features)
   - [The Signup/Login Page](#signup-login)
   - [The Profile Page](#profile-page)
+- [Technical Build Overview](#technical-build-overview)
+  - [Serverless Functions for Sensitive API Calls](#serverless-functions-for-sensitive-api-calls)
+  - [User Registration and Login](#user-registration-and-login)
+  - [Data Models](#data-models)
+- [Agile Approach to Development](#agile-approach-to-development)
 - [Technologies](#technologies)
   - [Language](#languages)
   - [Tools](#tools)
@@ -63,8 +69,6 @@ What are you waiting for? Sign up now, enter your partner's information, and let
   - [Thank You](#thank-you)
 - [The Team](#team)
 
-
-
 <a id=responsive></a>
 
 ### Am I Responsive?
@@ -81,8 +85,6 @@ What are you waiting for? Sign up now, enter your partner's information, and let
 - The strategy centers around providing users with a platform to create comprehensive profiles that reflect their personalities, interests, and relationship preferences.
 - This approach aims to lay the foundation for meaningful and personalized interactions, setting the stage for deeper connections.
 
-
-
 <a id="the-scope"></a>
 
 ### The Scope
@@ -91,8 +93,6 @@ What are you waiting for? Sign up now, enter your partner's information, and let
 - Users are encouraged to share comprehensive information about their partners, fostering a more profound understanding of their personalities and preferences.
 - While the initial release focuses on text-based interactions, future iterations may extend to incorporate multimedia elements for a richer user experience.
 
-
-
 <a id="the-structure"></a>
 
 ### The Structure
@@ -100,7 +100,6 @@ What are you waiting for? Sign up now, enter your partner's information, and let
 - The app structure prioritizes the creation of detailed partner profiles as the central feature.
 - User-friendly interfaces guide users through the partner profile creation process, ensuring a seamless and enjoyable experience.
 - Conversation starters and personalized suggestions complement the partner profile-centric structure, offering avenues for engaging interactions.
-
 
 <a id="the-skeleton"></a>
 
@@ -116,13 +115,9 @@ What are you waiting for? Sign up now, enter your partner's information, and let
 
 - Here's our system architecture diagram, illustrating the overall flow and components of the Ask Cupid app's backend. This diagram provides a high-level view of how different parts of the system interact.
 
- - [View Diagram In Detail](src/assets/images/askcupid_erd.png)
+- [View Diagram In Detail](src/assets/images/askcupid_erd.png)
 
   <img src="src/assets/images/askcupid_erd.png" width="300" >
-
-
-
-
 
 <a id="the-surface"></a>
 
@@ -137,6 +132,7 @@ The Ask Cupid app is built using a modern and robust technology stack, combining
 - **Backend:** Powered by Django, our backend ensures the efficient processing of data, contributing to the app's commitment to facilitating genuine connections and meaningful conversations.
 
 These technologies work in harmony to create a space where users can delve into the intricacies of their partners' personalities, building a foundation for lasting and authentic relationships.
+
 - A modern and intuitive layout encourages users to create detailed profiles for their partners, fostering a sense of authenticity and depth in the connections made through the app.
 - The decision to prioritize partner profiles underscores the app's commitment to facilitating genuine connections and meaningful conversations.
 - This intentional design choice aims to create a space where users can delve into the intricacies of their partners' personalities, building a foundation for lasting and authentic relationships.
@@ -151,21 +147,21 @@ These technologies work in harmony to create a space where users can delve into 
 
 - **Easy Signup:**
 - As a first-time user, I'd like to easily see where I can sign up so I can get started.
-There should be a prominent and easily accessible "Sign Up" button on the landing page.
-The sign-up process should be straightforward with clear instructions.
-Minimal required information during sign-up to encourage a quick and hassle-free onboarding experience.
+  There should be a prominent and easily accessible "Sign Up" button on the landing page.
+  The sign-up process should be straightforward with clear instructions.
+  Minimal required information during sign-up to encourage a quick and hassle-free onboarding experience.
 
 - **Welcoming Atmosphere:**
 - As a first-time user, I'd like to feel welcomed to the site so I'd feel the desire to come back.
-The landing page should feature a warm and inviting design with visually appealing elements.
-Upon successful sign-up, the user should receive a personalized welcome message or prompt.
-Clear navigation cues and tooltips should guide the user to explore key features and sections.
+  The landing page should feature a warm and inviting design with visually appealing elements.
+  Upon successful sign-up, the user should receive a personalized welcome message or prompt.
+  Clear navigation cues and tooltips should guide the user to explore key features and sections.
 
 - **Instructions:**
 - As a first-time user, I'd like instructions on what to do so I can get started quickly.
-Provide an onboarding tutorial or guide that highlights key features and how to navigate the app.
-Include tooltips or pop-ups explaining the purpose of each section or button.
-Offer a "Getting Started" section with concise instructions on creating the first partner profile and initiating a conversation.
+  Provide an onboarding tutorial or guide that highlights key features and how to navigate the app.
+  Include tooltips or pop-ups explaining the purpose of each section or button.
+  Offer a "Getting Started" section with concise instructions on creating the first partner profile and initiating a conversation.
 
 <a id="returning-user"></a>
 
@@ -184,16 +180,15 @@ Offer a "Getting Started" section with concise instructions on creating the firs
 
 - **Previous Profiles:**
 - As a returning user, I'd like to see the results for my previous profiles so I can reflect on past .
-Provide a clear and easily accessible "View Results" or "Previous Profiles" section.
-Display a summary or detailed view of the results from past partner profiles.
-Include an option to revisit and edit previous profiles if desired.
+  Provide a clear and easily accessible "View Results" or "Previous Profiles" section.
+  Display a summary or detailed view of the results from past partner profiles.
+  Include an option to revisit and edit previous profiles if desired.
 
 - **My Own Profile:**
 - As a returning user, I'd love to be able to input my own info as well so I can make the experience more real and personalized.
-Enable users to easily navigate to the "Create Profile" section.
-Provide an option to input and save personal information to create their own profiles.
-Allow users to switch seamlessly between creating profiles for others and creating profiles for themselves.
-
+  Enable users to easily navigate to the "Create Profile" section.
+  Provide an option to input and save personal information to create their own profiles.
+  Allow users to switch seamlessly between creating profiles for others and creating profiles for themselves.
 
 <a id="frequent-user"></a>
 
@@ -201,24 +196,23 @@ Allow users to switch seamlessly between creating profiles for others and creati
 
 - **More Categories:**
 - As a frequent user, I'd love to see more categories so I can get a more precise result.
-Expand the range of categories available for creating partner profiles.
-Include options for specific interests, hobbies, and lifestyle preferences.
-Enhance the algorithm to provide more nuanced and precise match results based on the additional categories.
+  Expand the range of categories available for creating partner profiles.
+  Include options for specific interests, hobbies, and lifestyle preferences.
+  Enhance the algorithm to provide more nuanced and precise match results based on the additional categories.
 
 - **More Matching:**
 - As a frequent user, I'd like to match myself with different partners and see which matches the best.
-Introduce a "Match Yourself" feature where users can simulate matches with various partner profiles.
-Display a compatibility score or summary for each simulated match.
-Allow users to compare results and gain insights into compatibility patterns.
+  Introduce a "Match Yourself" feature where users can simulate matches with various partner profiles.
+  Display a compatibility score or summary for each simulated match.
+  Allow users to compare results and gain insights into compatibility patterns.
 
 - **Our Song:**
 - As a frequent user, I'd like our song to be displayed so I can add a personalized touch to my interactions.
-Include an option for users to set a personalized "Our Song" for each partner profile.
-Display the chosen song prominently within the partner profile or during interactions.
-Allow users to change or update their chosen song for a dynamic and personalized experience.
+  Include an option for users to set a personalized "Our Song" for each partner profile.
+  Display the chosen song prominently within the partner profile or during interactions.
+  Allow users to change or update their chosen song for a dynamic and personalized experience.
 
 <a id="design"></a>
-
 
 ### Design
 
@@ -229,8 +223,9 @@ Allow users to change or update their chosen song for a dynamic and personalized
 <br>
 <br>
 
+<a id="features"></a>
 
-#  Features
+# Features
 
 <a id="signup-login"></a>
 
@@ -241,9 +236,11 @@ Allow users to change or update their chosen song for a dynamic and personalized
 Embark on a seamless journey with our user-friendly Sign Up/Login page, the gateway to a world of personalized connections and unforgettable experiences.
 
 - **Sign Up for an Account:**
+
   - If you're new here, the Sign Up feature awaits you. Create your account effortlessly and step into a realm where genuine connections and curated experiences await.
 
 - **Login for Returning Users:**
+
   - For those returning, our Login page is your entry point. Access your personalized space with ease, picking up where you left off in your journey.
 
 - **Featuring Our Outstanding Logo:**
@@ -260,12 +257,70 @@ This is where the magic begins, where you sign up to create moments and log in t
 Dive into the heart of the experience on our Profile Page — the canvas where you paint the portrait of your loved ones, be it your partner, sibling, friend, or parent. This is where the magic happens, setting the stage for the AI to weave personalized surprises based on the details you provide.
 
 - **Create Profiles for Your Loved Ones:**
+
   - Share the essence of your cherished relationships by entering information about your partner, sibling, friend, or parent. This is the key to unlocking tailored and meaningful surprises.
 
 - **Fuel AI for Personalized Answers:**
   - The AI gets to work when you feed it the details. Craft comprehensive profiles, and witness how the AI transforms them into delightful surprises, making every interaction with your profile special and unique.
 
 This Profile Page is not just about entering information; it's about curating experiences and connecting with your loved ones in a way that's uniquely yours.
+
+<a id="technical-build-overview"></a>
+
+# Technical Build Overview
+
+<a id="serverless-functions-for-sensitive-api-calls"></a>
+
+## Serverless Functions for Sensitive API Calls
+
+- **Deployment Platform:**
+  - Netlify
+- **Purpose:**
+  - To securely make API calls to OpenAI's API, we utilized serverless functions deployed on Netlify. This approach enhances security by keeping sensitive API keys server-side and off the client-side code, thereby reducing exposure to potential vulnerabilities.
+
+<a id="user-registration-and-login"></a>
+
+## User Registration and Login
+
+- **Back End Framework:**
+  - Django REST Framework (DRF) hosted on Heroku
+- **Functionality:**
+  - We implemented user registration and login functionality using Django DRF, providing a secure and efficient way for users to access their accounts. The Django user model is extended to support custom user data and authentication mechanisms.
+
+<a id="data-models"></a>
+
+## Data Models
+
+- **User Model:**
+  - Utilizes the standard Django user model for authentication and user management.
+- **Account Model:**
+  - Designed to store user profile information with a focus on future scalability for incorporating social media activities. It includes owner-specific permissions for update and delete operations, ensuring data integrity and security.
+- **Partner Profile Model:**
+  - Aims to store partner characteristics, simplifying the user experience by eliminating the need to fill out forms on each login. This model enhances the platform's usability by allowing registered users to quickly access relevant information.
+
+<a id="agile-approach-to-development"></a>
+
+# Agile Approach to Development
+
+Due to time constraints and the ambitious scope of our project, we adopted an agile development approach, prioritizing specific features to ensure timely and effective delivery. Here's a brief overview of our development phases:
+
+1. **Initial Focus:**
+
+- Development began with the implementation of serverless functions on Netlify for secure OpenAI API calls, alongside the construction of the React front end and backend Django API authentication.
+
+2. **Integration and Testing:**
+
+- Once the OpenAI API functionality was developed and tested, it was integrated into the main React application. Concurrently, front end developers worked on styling, while back end developers focused on the account model for profile data storage.
+
+3. **User Authentication:**
+
+- The registration and login functionalities were implemented, allowing users to securely access their accounts. This phase also included front end enhancements for usability and aesthetics, alongside backend development for partner data storage.
+
+4. **User Profile and Partner Info:**
+
+- Time-permitting, additional features such as user profile management (CRU operations) and partner information storage with CRUD capabilities were planned to enrich the user experience and platform functionality.
+
+Our agile approach ensured that we remained flexible and responsive to project needs, allowing for the prioritization of critical features while laying the groundwork for future enhancements.
 
 <a id="technologies"></a>
 
@@ -283,15 +338,14 @@ This Profile Page is not just about entering information; it's about curating ex
 - **Python:** Backend programming language for server-side development.
 - **Chakra UI:** React component library for building accessible and customizable UI components.
 
-
 <a id="tools"></a>
 
 ### Tools
 
-* Balsamiq :  Used for creating wireframes.
-* VsCode : Used to code.
-* Github : Employed for code deployment.
-* Am I Responsive: Employed for testing and ensuring responsiveness.
+- Balsamiq : Used for creating wireframes.
+- VsCode : Used to code.
+- Github : Employed for code deployment.
+- Am I Responsive: Employed for testing and ensuring responsiveness.
 
 <a id="frameworks-libaries"></a>
 
@@ -305,26 +359,24 @@ This Profile Page is not just about entering information; it's about curating ex
 
 ### Manual Testing
 
- <a id="lighthouse"></a>
+<a id="lighthouse"></a>
 
-  ### Lighthouse
+### Lighthouse
 
-  <a id="browser-test"></a>
+<a id="browser-test"></a>
 
-  ### Browser Test
+### Browser Test
 
- <a id="validation"></a>
+<a id="validation"></a>
 
-  ### Validation
+### Validation
 
-  <a id="bugs "></a>
+<a id="bugs "></a>
 
 ### Bugs
 
-| Bug | Status | Description | Steps To Resolve |
-| --- | --- | --- | --- |
-| Issue|  ~~Resolved~~  | Everythings fucked | Correct it |
-| Issue|  Ungoing | Everythings fucked | Dont know |
-| Im a newbie|  Ungoing | I can´t do shit | Teach me |
-
-
+| Bug         | Status       | Description        | Steps To Resolve |
+| ----------- | ------------ | ------------------ | ---------------- |
+| Issue       | ~~Resolved~~ | Everythings fucked | Correct it       |
+| Issue       | Ungoing      | Everythings fucked | Dont know        |
+| Im a newbie | Ungoing      | I can´t do shit    | Teach me         |

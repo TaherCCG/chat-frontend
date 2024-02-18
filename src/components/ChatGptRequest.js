@@ -15,7 +15,9 @@ const ChatGptRequest = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Update preset just before submitting
-    const updatedPreset = `My ${relationship} is a ${personType} ${age} year old who loves ${loves}. Really tailor the answer to my next question to her focusing on her age, likes, and gender. Start out your answer by explaining why it is well suited to her.`;
+    const updatedPreset = `Respond to this as if you are Cupid: My ${relationship} is a ${personType} ${age} year old who loves ${loves}.
+    Really tailor the answer to my next question to them focusing on their age, likes, and gender.
+    Start out your answer by explaining why it is well suited to them.`;
     // Call your serverless function here with the updatedPreset
     const fetchedResponse = await fetch("/.netlify/functions/chatgpt", {
       method: "POST",
@@ -50,9 +52,11 @@ const ChatGptRequest = () => {
               >
                 <option value="Wife" >Wife</option>
                 <option value="Husband">Husband</option>
-                <option value="Friend">Friend</option>
-                <option value="Sibling">Sibling</option>
-                <option value="Parent">Parent</option>
+                <option value="Girlfriend">Girlfriend</option>
+                <option value="Boyfriend">Boyfriend</option>
+                <option value="Partner">Partner</option>
+                <option value="Imaginary Partner">Imaginary Partner</option>
+                <option value="Crush">Crush</option>
               </select>
             </Form.Group>
 
@@ -72,6 +76,18 @@ const ChatGptRequest = () => {
                 <option value="Intellectual">Intellectual</option>
                 <option value="Creative">Creative</option>
                 <option value="Adventurous">Adventurous</option>
+                <option value="Lazy">Lazy</option>
+                <option value="Curious">Curious</option>
+                <option value="Passionate">Passionate</option>
+                <option value="Heartful">Heartful</option>
+                <option value="Introverted">Introverted</option>
+                <option value="Extroverted">Extroverted</option>
+                <option value="Sociopathic">Sociopathic</option>
+                <option value="Self-Confident">Self-Confident</option>
+                <option value="Perfectionist ">Perfectionist </option>
+                <option value="Skeptical">Skeptical</option>
+                <option value="Wild">Wild</option>
+                <option value="Humorous">Humorous</option>
               </select>
             </Form.Group>
             <br />
@@ -103,6 +119,17 @@ const ChatGptRequest = () => {
                 <option value="Books">Books</option>
                 <option value="Travel">Travel</option>
                 <option value="Music">Music</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Coding">Coding</option>
+                <option value="Food">Food</option>
+                <option value="Drinking">Drinking</option>
+                <option value="Nature">Nature</option>
+                <option value="Sports">Sports</option>
+                <option value="Movies">Movies</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Art">Art</option>
+                <option value="Gardening">Gardening</option>
+                <option value="Writing">Writing</option>
               </select>
             </Form.Group>
             <br />
