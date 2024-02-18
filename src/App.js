@@ -8,6 +8,7 @@ import SignInForm from "./pages/auth/SignInForm";
 import MyProfile from './pages/profile/MyProfile';
 import EditProfile from './pages/profile/EditProfile';
 import ChatGptRequest from './components/ChatGptRequest';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                 <Route exact path="/chatgptrequest" render={() => <ChatGptRequest />} />
               </Switch>     
           </Container>
+          <Footer />
         </div>
   );
 }
