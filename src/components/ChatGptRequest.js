@@ -91,7 +91,7 @@ const ChatGptRequest = () => {
         <button type="submit">Submit</button>
       </form>
       <div>{response}</div>
-    </Row>
+    </div>
   );
 }
 export default ChatGptRequest;
