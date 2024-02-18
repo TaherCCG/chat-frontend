@@ -13,8 +13,10 @@ const ChatGptRequest = () => {
   const [loves, setLoves] = useState("Animals");
 
   const [questionUploaded, setQuestionUploaded] = useState(false);
+  const [questionSent, setQuestionSent] = useState(false);
 
   const handleSubmit = async (e) => {
+    setQuestionSent(true)
     e.preventDefault();
     // Update preset just before submitting
     const updatedPreset = `Respond to this as if you are Cupid: My ${relationship} is a ${personType} ${age} year old who loves ${loves}.
@@ -150,9 +152,14 @@ const ChatGptRequest = () => {
                 onChange={(e) => setQuestion(e.target.value)}
               />
             </Form.Group>
+            {questionSent ? (
+              <Button className={appStyles.Button} disabled>
+                Asking
+              </Button>):(
+              <Button type="submit" className={appStyles.Button}><img src={logo} alt="logo"/>
+              Ask Cupid
+              </Button>)}
             
-            <Button type="submit" className={appStyles.Button}><img src={logo} alt="logo"/> Ask Cupid</Button>
-
           </Form>
         </Container>
       </Col>
