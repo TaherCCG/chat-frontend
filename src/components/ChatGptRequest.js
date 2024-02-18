@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import appStyles from "../styles/ChatGptForm.module.css";
 import logo from "../assets/logo.png";
-import { Row, Container, Form, Button, Col, Alert } from "react-bootstrap";
+import { Row, Container, Form, Button, Col} from "react-bootstrap";
 
 const ChatGptRequest = () => {
 
@@ -117,7 +117,7 @@ const ChatGptRequest = () => {
               />
             </Form.Group>
             
-            <Button type="submit" className={appStyles.Button}><img src={logo}/> Ask Cupid</Button>
+            <Button type="submit" className={appStyles.Button}><img src={logo} alt="logo"/> Ask Cupid</Button>
 
           </Form>
         </Container>
