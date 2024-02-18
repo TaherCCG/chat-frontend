@@ -3,7 +3,7 @@
     pointer-events: none;
     padding: 25px;;
   }
-  
+
 @media (prefers-reduced-motion: no-preference) {
   .AppLogo {
     animation: App-logo-sway infinite 4s linear;
@@ -26,4 +26,45 @@
   25% {transform: rotate(10deg);}
   50% {transform: rotate(0deg);}
   75% {transform: rotate(-10deg);}
+}
+
+.SignButton {
+
+  background: #DE5C6E;
+  border-radius: 2px;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: 0.3s;
+  width: 50%;
+
+
+}
+
+.SignButton:hover {
+  background: #ec5267;
+}
+
+.Link {
+  text-decoration: none;
+  color :#ffffff
+
+}
+
+.TextBox {
+  padding: 30px 20px 20px 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
