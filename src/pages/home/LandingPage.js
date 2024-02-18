@@ -3,27 +3,37 @@ import { Container } from "react-bootstrap";
 import logo from "../../assets/logo.png";
 import styles from "../../styles/LandingPage.module.css";
 import { Link } from "react-router-dom";
+import { useCurrentUser } from "../../context/CurrentUserContext";
+import ChatGptRequest from "../../components/ChatGptRequest";
 
 const LandingPage = () => {
+  const currentUser = useCurrentUser();
+
+  const loggedOutContent= (<>
+    <p>Want help from Cupid?</p>
+    <Link className={styles.Link} to="/signup">
+      Sign Up
+    </Link>
+    <Link className={styles.Link} to="/signin">
+      Sign In
+    </Link>
+  </>
+  );
+
+  const loggedInContent= (<>
+    <p>Welcome {currentUser?.username}!</p>
+    <ChatGptRequest/>
+  </>
+  );
 
 
   return (
+    
+
     <div className= {styles.LandingArea}>
         <img src={logo} className={styles.AppLogo} alt="logo" />
-        <p>Do you want to ask help from Cupid?</p>
-        <Container >
-
-          <Link className={styles.Link} to="/signup">
-            Sign Up
-          </Link>
-          <Link className={styles.Link} to="/signin">
-            Sign In
-          </Link>
-
-          <div>
-            <p> Generate Answer Here </p>
-          </div>
-        
+        <Container>
+          {currentUser ? loggedInContent : loggedOutContent}
         </Container>
 
     </div>
