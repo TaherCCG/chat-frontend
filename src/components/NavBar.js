@@ -15,7 +15,7 @@ const NavBar = () => {
             >
                 <Navbar.Brand className={styles.NavMenuLogo}>
                     <img src={logo} alt="logo" height="45" />
-                    <p>Ask Cupid</p>
+                    <p>AskCupid</p>
                 </Navbar.Brand>
             </NavLink>
 
@@ -38,7 +38,7 @@ const NavBar = () => {
                     className={styles.NavLink}
                     activeClassName={styles.Active}
                 >
-                    <i className="fas fa-sign-in-alt m-1"></i>Sign up
+                    <i class="fa-solid fa-user-plus"></i>Sign up
                 </NavLink>
 
                 <NavLink
@@ -46,7 +46,7 @@ const NavBar = () => {
                     className={styles.NavLink}
                     activeClassName={styles.Active}
                 >
-                    <i className="fas fa-sign-in-alt m-1"></i>My Profile
+                    <i class="fa-solid fa-user"></i>My Profile
                 </NavLink>
 
             </Nav>

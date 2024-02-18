@@ -1,21 +1,51 @@
 .NavBar {
-    background-color: #ffffff;
+    background-color: #de5c6e;
     border: 1px solid #F5F5F5;
     display: flex;
-    justify-content: space-between !important;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
   }
 
 .NavMenuLogo{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    margin: 0 8px;
+    width: 300px !important;
+}
+
+.NavMenuLogo img{
+    height: 50px;
+    padding: 0 10px;
 }
 
 .NavMenuLogo p{
     margin: 0;
+    font-family: Bellota;
+    font-size: 35px;
+    color: #FFDDCF;
 }
 
-.NavLinks i{
-    padding: 5px;
+.NavLink {
+    min-width: 100px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;
+    align-items: center;
+    color:#FFDDCF;
+    margin: 5px 10px;
+    border-radius: 10px;
 }
+
+.NavLink:hover {
+    transform: scale(1.05);
+}
+
+.NavLink i{
+    font-size: 20px;
+}
+
