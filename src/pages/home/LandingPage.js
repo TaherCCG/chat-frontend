@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import logo from "../../assets/logo.png";
 import appStyles from "../../styles/LandingPage.module.css";
 import { Link } from "react-router-dom";
@@ -19,17 +19,15 @@ const LandingPage = () => {
         companion for unforgettable moments. Sign up to get started!
       </p>
       </div>
-      <Button className={`${appStyles.SignButton}`}>
-        <Link className={appStyles.Link} to="/signup">
+      <div>
+        <Link className={`${appStyles.SignButton} ${appStyles.Link}`} to="/signup">
           Sign Up
         </Link>
-      </Button>
-      <div style={{ margin: '0 10px' }}></div>
-      <Button className={`${appStyles.SignButton}`}>
-        <Link className={appStyles.Link} to="/signin">
-          Sign In
+        <Link className={`${appStyles.SignButton} ${appStyles.Link}`} to="/signin">
+            Sign in
         </Link>
-      </Button>
+      </div>
+
     </>
   );
 
