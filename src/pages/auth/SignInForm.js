@@ -97,7 +97,7 @@ function SignInForm () {
                 {message}
               </Alert>
             ))}
-            <Button type="submit"
+            <Button type="submit" className={appStyles.Button}
             >
               Sign in
             </Button>
