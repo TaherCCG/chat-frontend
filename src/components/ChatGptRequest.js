@@ -12,6 +12,8 @@ const ChatGptRequest = () => {
   const [age, setAge] = useState("21");
   const [loves, setLoves] = useState("Animals");
 
+  const [questionUploaded, setQuestionUploaded] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Update preset just before submitting
@@ -28,7 +30,12 @@ const ChatGptRequest = () => {
     });
     const jsonResponse = await fetchedResponse.json();
     setResponse(jsonResponse.message);
+    setQuestionUploaded(true);
   };
+
+  const closeAnswerBox = async () => {
+    setQuestionUploaded(false);
+  }
 
   return (
 
@@ -149,7 +156,14 @@ const ChatGptRequest = () => {
           </Form>
         </Container>
       </Col>
-      <div>{response}</div>
+        {questionUploaded ? (
+          <div className={appStyles.Response}>
+            <p>{response}</p>
+            <p>Love, Cupid</p>
+            <p>xox</p>
+          <button onClick={closeAnswerBox}><i className="fa-solid fa-heart-circle-xmark"></i></button>
+        </div>)
+        :(<div> </div>)}
     </Row>
   );
 }
