@@ -43,8 +43,10 @@ What are you waiting for? Sign up now, enter your partner's information, and let
   - [Frequent User](#frequent-user)
   - [Design](#design)
 - [Features](#features)
-  - [The Signup/Login Page](#signup-login)
-  - [The Profile Page](#profile-page)
+  - [The Landing Page](#landing)
+  - [The Sign Up Page](#signup)
+  - [The Sign In Page](#signin)
+  - [The Question Page](#question)
 - [Technical Build Overview](#technical-build-overview)
   - [Serverless Functions for Sensitive API Calls](#serverless-functions-for-sensitive-api-calls)
   - [User Registration and Login](#user-registration-and-login)
@@ -227,43 +229,84 @@ These technologies work in harmony to create a space where users can delve into 
 
 # Features
 
-<a id="signup-login"></a>
+<a id="landing"></a>
 
-# The Signup/Login Page
+# The Landing Page
 
-### Start Your Journey with Our Sign Up/Login Page
+<img  src ="src/assets/images/landing-page.png" alt="Landing Page" width="400">
 
-Embark on a seamless journey with our user-friendly Sign Up/Login page, the gateway to a world of personalized connections and unforgettable experiences.
+### Welcome to Ask Cupid Landing Page
+- Your first contact with Ask Cupid — where the journey begins, and things may never be the same! Here, your adventure kicks off, setting the stage for unforgettable connections and curated experiences.
 
-- **Sign Up for an Account:**
+### Explore Ask Cupid:
 
-  - If you're new here, the Sign Up feature awaits you. Create your account effortlessly and step into a realm where genuine connections and curated experiences await.
+- Discover a world where genuine connections thrive, driven by personalized profiles and thoughtful interactions.
+Curated Experiences:
 
-- **Login for Returning Users:**
+### Dive into curated suggestions for gifts and dreamy holiday destinations, tailored just for you.
+- Your Adventure Awaits:
+This landing page is more than a welcome; it's a portal to an extraordinary world designed to make every moment count. Welcome to Ask Cupid, where the magic begins.
 
-  - For those returning, our Login page is your entry point. Access your personalized space with ease, picking up where you left off in your journey.
+### Footer - Meet the Team:
+- On every page, explore the personalities behind Ask Cupid. Meet the team in our footer, a constant presence as you navigate through your personalized journey.
 
-- **Featuring Our Outstanding Logo:**
-  - As you embark on this experience, you'll be greeted by our outstanding logo, symbolizing the essence of our app — a blend of style, authenticity, and connection.
+### Responsive Design:
+- Experience seamless interactions on all devices. Ask Cupid ensures a responsive design, providing an optimal experience whether you're on a desktop, tablet, or mobile device.
 
-This is where the magic begins, where you sign up to create moments and log in to cherish memories. Our logo stands as a beacon, guiding you into an extraordinary world designed just for you.
 
-<a id="profile-page"></a>
+<a id="signup"></a>
 
-# The Profile Page
+# The Sign Up Page
 
-### Craft Personalized Profiles on Our Profile Page
 
-Dive into the heart of the experience on our Profile Page — the canvas where you paint the portrait of your loved ones, be it your partner, sibling, friend, or parent. This is where the magic happens, setting the stage for the AI to weave personalized surprises based on the details you provide.
+<img src= "src/assets/images/signup.png" alt="landing" width="400">
 
-- **Create Profiles for Your Loved Ones:**
+### Start Your Journey with Our Sign Up Page
+- Embark on a seamless journey with our user-friendly Sign Up page, the gateway to a world of personalized connections and unforgettable experiences.
 
-  - Share the essence of your cherished relationships by entering information about your partner, sibling, friend, or parent. This is the key to unlocking tailored and meaningful surprises.
+### Sign Up for an Account:
+- If you're new here, the Sign Up feature awaits you. Create your account effortlessly and step into a realm where genuine connections and curated experiences await.
+Featuring Our Outstanding Logo:
 
-- **Fuel AI for Personalized Answers:**
-  - The AI gets to work when you feed it the details. Craft comprehensive profiles, and witness how the AI transforms them into delightful surprises, making every interaction with your profile special and unique.
+### Featuring Our Outstanding Logo:
+- As you embark on this experience, you'll be greeted by our outstanding logo, symbolizing the essence of our app — a blend of style, authenticity, and connection.
+This is where the magic begins, where you sign up to create moments. Our logo stands as a beacon, guiding you into an extraordinary world designed just for you.
 
-This Profile Page is not just about entering information; it's about curating experiences and connecting with your loved ones in a way that's uniquely yours.
+<a id="signin"></a>
+
+# The Sign In Page
+
+<img src="src/assets/images/signin.png" alt="Signin Page" width="400">
+
+### Start Your Returning Journey with Our Sign In Page
+- Embark on a seamless journey with our user-friendly Sign In page, your entry point to a world of personalized connections and unforgettable experiences.
+
+### Sign In for Returning Users:
+
+- For those returning, our Login feature is your gateway. Access your personalized space with ease, picking up where you left off in your journey.
+### Featuring Our Outstanding Logo:
+
+- As you embark on this experience, you'll be greeted by our outstanding logo, symbolizing the essence of our app — a blend of style, authenticity, and connection.
+This is where the magic continues, where you log in to cherish memories. Our logo stands as a beacon, guiding you into an extraordinary world designed just for you.
+
+<a id="question"></a>
+
+# The Question Page
+
+<img src="src/assets/images/question.png" alt="Question Page" width="400">
+
+### Ask Cupid Question Page
+- Welcome to the heart of Ask Cupid — the Question Page, where the magic happens. This is the space where you provide information about your partner, and Ask Cupid works its enchantment to turn your surprise into perfection.
+
+### How It Works:
+- Personalized Information:
+
+- Input details about your partner, creating a comprehensive profile that reflects their personality, interests, and preferences.
+### Enchanting Surprises:
+
+- Let Ask Cupid transform the information into tailored suggestions for gifts and dreamy holiday destinations.
+### Your Journey to Perfection:
+- The Question Page is where connections deepen, and surprises become extraordinary. Engage with Ask Cupid to craft moments that transcend the ordinary.
 
 <a id="technical-build-overview"></a>
 
