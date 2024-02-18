@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
 import Dropdown from 'react-bootstrap/Dropdown';
-import Nav from 'react-bootstrap/Nav';
 
 const Footer = () => {
     return (
