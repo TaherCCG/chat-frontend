@@ -13,3 +13,9 @@ code {
   font-family: 'Cormorant Garamond', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-primary {
+  --bs-btn-active-bg: #FFA1AC;
+  --bs-btn-active-border-color: #FFA1AC;
+  --bs-btn-active-color: black;
+}
