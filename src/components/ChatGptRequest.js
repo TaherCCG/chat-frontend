@@ -1,5 +1,9 @@
-import React, {useState} from "react";
-const ChatGptRequest= () => {
+import React, { useState } from "react";
+import appStyles from "../styles/ChatGptForm.module.css";
+import logo from "../assets/logo.png";
+import { Row, Container, Form, Button, Col} from "react-bootstrap";
+
+const ChatGptRequest = () => {
 
   const [question, setQuestion] = useState("");
   const [response, setResponse] = useState("");
@@ -25,8 +29,6 @@ const ChatGptRequest= () => {
   };
 
   return (
-
-
     <div>
       <form onSubmit={handleSubmit}>
         <br />
@@ -89,15 +91,14 @@ const ChatGptRequest= () => {
         <button type="submit">Submit</button>
       </form>
       <div>{response}</div>
-    </div>
+    </Row>
   );
 }
 export default ChatGptRequest;
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+

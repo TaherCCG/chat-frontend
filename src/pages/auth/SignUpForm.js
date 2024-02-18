@@ -116,7 +116,7 @@ const SignUpForm = () => {
                 </Alert>
               ))}
 
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" className={appStyles.Button}>
               SignUp
             </Button>
         </Form>
