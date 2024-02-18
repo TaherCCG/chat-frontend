@@ -149,7 +149,10 @@ const ChatGptRequest = () => {
           </Form>
         </Container>
       </Col>
-      <div className={appStyles.Response}> {response} </div>
+      <div className={appStyles.Response}> 
+        {response} 
+        <button><i className="fa-solid fa-heart-circle-xmark"></i></button>
+      </div>
     </Row>
   );
 }
