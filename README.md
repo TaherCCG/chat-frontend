@@ -44,7 +44,8 @@ What are you waiting for? Sign up now, enter your partner's information, and let
 - [Features](#features)
   - [The Signup/Login Page](#signup-login)
   - [The Profile Page](#profile-page)
-- [Language](#language)
+- [Technologies](#technologies)
+  - [Language](#languages)
   - [Tools](#tools)
   - [Frameworks & Libaries](#frameworks-libaries)
 - [Testing](#testing)
@@ -110,7 +111,16 @@ What are you waiting for? Sign up now, enter your partner's information, and let
 
   - [View More Wireframes](src/assets/wireframes)
 
-  <img src="src/assets/wireframes/wireframe_1_landing_page.png" width="150" >
+  <img src="src/assets/wireframes/wireframe_1_landing_page.png" width="250" >
+  <br>
+
+- Here's our system architecture diagram, illustrating the overall flow and components of the Ask Cupid app's backend. This diagram provides a high-level view of how different parts of the system interact.
+
+ - [View Diagram In Detail](src/assets/images/askcupid_erd.png)
+
+  <img src="src/assets/images/askcupid_erd.png" width="300" >
+
+
 
 
 
@@ -257,13 +267,31 @@ Dive into the heart of the experience on our Profile Page — the canvas where y
 
 This Profile Page is not just about entering information; it's about curating experiences and connecting with your loved ones in a way that's uniquely yours.
 
-<a id="language"></a>
+<a id="technologies"></a>
 
-# Language
+# Technologies
+
+<a id="languages"></a>
+
+### Languages
+
+- **Languages used:**
+- **HTML:** Used for structuring the web pages.
+- **CSS:** Employed for styling and layout.
+- **React:** JavaScript library utilized for building the interactive user interface.
+- **Bootstrap:** Front-end framework for responsive and visually appealing design.
+- **Python:** Backend programming language for server-side development.
+- **Chakra UI:** React component library for building accessible and customizable UI components.
+
 
 <a id="tools"></a>
 
 ### Tools
+
+* Balsamiq :  Used for creating wireframes.
+* VsCode : Used to code.
+* Github : Employed for code deployment.
+* Am I Responsive: Employed for testing and ensuring responsiveness.
 
 <a id="frameworks-libaries"></a>
 
@@ -292,5 +320,11 @@ This Profile Page is not just about entering information; it's about curating ex
   <a id="bugs "></a>
 
 ### Bugs
+
+| Bug | Status | Description | Steps To Resolve |
+| --- | --- | --- | --- |
+| Issue|  ~~Resolved~~  | Everythings fucked | Correct it |
+| Issue|  Ungoing | Everythings fucked | Dont know |
+| Im a newbie|  Ungoing | I can´t do shit | Teach me |
 
 
