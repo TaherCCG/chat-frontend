@@ -31,7 +31,7 @@ const ChatGptRequest = () => {
   return (
 
     <Row className={appStyles.Row}>
-      <Col className="my-auto py-2 p-md-2" md={4}>
+      <Col className="my-auto py-2 p-md-2" md={8} lg={6}>
         <Container className={`${appStyles.Content} p-4`}>
           <h1 className={appStyles.Header}>Ask a Question</h1>
 
