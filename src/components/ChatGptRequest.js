@@ -13,8 +13,10 @@ const ChatGptRequest = () => {
   const [loves, setLoves] = useState("Animals");
 
   const [questionUploaded, setQuestionUploaded] = useState(false);
+  const [questionSent, setQuestionSent] = useState(false);
 
   const handleSubmit = async (e) => {
+    setQuestionSent(true)
     e.preventDefault();
     // Update preset just before submitting
     const updatedPreset = `Respond to this as if you are Cupid: My ${relationship} is a ${personType} ${age} year old who loves ${loves}.
@@ -35,12 +37,13 @@ const ChatGptRequest = () => {
 
   const closeAnswerBox = async () => {
     setQuestionUploaded(false);
+    setQuestionSent(false);
   }
 
   return (
 
     <Row className={appStyles.Row}>
-      <Col className="my-auto py-2 p-md-2" md={8} lg={6}>
+      <Col className="p-md-2" md={8} lg={6}>
         <Container className={`${appStyles.Content} p-4`}>
           <h1 className={appStyles.Header}>Ask a Question</h1>
 
@@ -150,9 +153,14 @@ const ChatGptRequest = () => {
                 onChange={(e) => setQuestion(e.target.value)}
               />
             </Form.Group>
+            {questionSent ? (
+              <Button className={appStyles.Button} disabled>
+                Asking...
+              </Button>):(
+              <Button type="submit" className={appStyles.Button}><img src={logo} alt="logo"/>
+              Ask Cupid
+              </Button>)}
             
-            <Button type="submit" className={appStyles.Button}><img src={logo} alt="logo"/> Ask Cupid</Button>
-
           </Form>
         </Container>
       </Col>
