@@ -25,7 +25,7 @@ const NavBar = () => {
             className={styles.NavLink}
             activeClassName={styles.Active}
         >
-            <i className="fas fa-sign-in-alt m-1"></i>My Profile
+            <i className="fa-solid fa-user"></i>My Profile
         </NavLink>
 
         <NavLink
@@ -52,7 +52,7 @@ const NavBar = () => {
             className={styles.NavLink}
             activeClassName={styles.Active}
         >
-            <i className="fas fa-sign-in-alt m-1"></i>Sign up
+            <i className="fa-solid fa-user-plus"></i>Sign up
         </NavLink>
     </>
     );
