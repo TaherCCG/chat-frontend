@@ -4,8 +4,10 @@ import appStyles from "../../styles/SignInForm.module.css";
 import { Row, Container, Form, Button, Col, Alert } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
+import { useSetCurrentUser } from "../../context/CurrentUserContext";
 
 function SignInForm () {
+  const setCurrentUser = useSetCurrentUser();
 
   const [signInData, setSignInData] = useState({
     username: "",
@@ -21,6 +23,7 @@ function SignInForm () {
     event.preventDefault();
     try {
       const { data } = await axios.post("/dj-rest-auth/login/", signInData);
+      setCurrentUser(data.user);
       history.push("/");
     } catch (err) {
       setErrors(err.response?.data);
@@ -38,11 +41,11 @@ function SignInForm () {
   return (
     <Row className={appStyles.Row}>
     <Col
-      md={4}
+      md={2} lg={3}
       className={`my-auto d-none d-md-block p-2 ${appStyles.SignUpCol}`}
     >
     </Col>
-    <Col className="my-auto py-2 p-md-2" md={4}>
+    <Col className="my-auto py-2 p-md-2" md={8} lg={6}>
       <Container className={`${appStyles.Content} p-4 `}>
         <h1 className={appStyles.Header}>Sign In</h1>
 
@@ -97,7 +100,7 @@ function SignInForm () {
                 {message}
               </Alert>
             ))}
-            <Button type="submit"
+            <Button type="submit" className={appStyles.Button}
             >
               Sign in
             </Button>
@@ -118,7 +121,7 @@ function SignInForm () {
 
     </Col>
     <Col
-      md={4}
+      md={2} lg={3}
       className={`my-auto d-none d-md-block p-2 ${appStyles.SignUpCol}`}
     >
     </Col>

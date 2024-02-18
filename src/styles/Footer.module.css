@@ -1,0 +1,48 @@
+.Footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    background-color: #DE5C6E;
+    color: #FFDDCF;
+}
+
+.NavLink i {
+    font-size: 20px;
+}
+
+.GithubLinks {
+    background-color: #DE5C6E ;
+    color: black;
+    border-color: #FFDDCF;
+}
+
+.GithubLinks:hover,
+.GithubLinks:active, 
+.GithubLinks:focus-visible {
+    background-color: #FFA1AC !important;
+    color: black !important;
+    border-color: #DE5C6E !important;
+}
+
+.DropdownContent{
+    color: #DE5C6E;
+    padding: 0 10px;
+}
+
+.DropdownItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.DropdownLinks a{
+    color: #DE5C6E !important;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.DropdownLinks a:hover{
+    color: #FFA1AC !important;
+}

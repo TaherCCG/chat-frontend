@@ -3,17 +3,19 @@
   }
 
 .Content {
-  background-color: #d2d2d2;
+  background-color: #CDEAFB;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 20px;
   border: 1px solid #dadadf;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .Input {
   background: #ffffff;
   border: 1px solid #f0f1f9;
   box-sizing: border-box;
-  border-radius: 2px;
+  border-radius: 20px;
   color: #7177a1;
   text-align: center;
   padding: 10px;
@@ -38,7 +40,7 @@
 }
 
 .Link span {
-  color: #ff9254;
+  color: #DE5C6E;
 }
 
 .Container {
@@ -51,4 +53,35 @@
 
 .SignUpCol {
   height: 375px;
+}
+
+.Input:hover {
+  border: 1px solid #FFA1AC;
+}
+
+.Input:focus {
+  background-color: #F7EF86;
+}
+
+.Button {
+  background: #DE5C6E;
+  border-radius: 2px;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: 0.3s;
+
+}
+
+.Button:hover {
+  background: #ec5267;
 }
