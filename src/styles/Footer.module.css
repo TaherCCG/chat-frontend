@@ -13,9 +13,9 @@
 }
 
 .GithubLinks {
-    background-color: #FFDDCF;
+    background-color: #DE5C6E ;
     color: black;
-    border-color: #DE5C6E;
+    border-color: #FFDDCF;
 }
 
 .GithubLinks:hover,
@@ -24,7 +24,6 @@
     background-color: #FFA1AC !important;
     color: black !important;
     border-color: #DE5C6E !important;
-    font-weight: 800 !important;
 }
 
 .DropdownContent{
