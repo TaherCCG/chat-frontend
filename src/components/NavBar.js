@@ -3,12 +3,41 @@ import { Navbar, Nav} from "react-bootstrap";
 import logo from "../assets/logo.png";
 import styles from "../styles/NavBar.module.css";
 import {NavLink} from "react-router-dom";
-import { useSetCurrentUser } from "../context/CurrentUserContext";
+import { useCurrentUser, useSetCurrentUser } from "../context/CurrentUserContext";
+import axios from "axios";
 
 const NavBar = () => {
-    const currentUser = useSetCurrentUser();
+    const currentUser = useCurrentUser();
+    const setCurrentUser = useSetCurrentUser();
 
-    const loggedInIcons = <>{currentUser?.username}</>; 
+    const handleSignOut = async () => {
+        try {
+          await axios.post("dj-rest-auth/logout/");
+          setCurrentUser(null);
+        } catch (err) {
+          console.log(err);
+        }
+    };
+    
+    const loggedInIcons = (<>
+        <NavLink
+            to="/myprofile"
+            className={styles.NavLink}
+            activeClassName={styles.Active}
+        >
+            <i className="fas fa-sign-in-alt m-1"></i>My Profile
+        </NavLink>
+
+        <NavLink
+            to="/"
+            className={styles.NavLink}
+            onClick={handleSignOut}
+            activeClassName={styles.Active}
+        >
+            <i className="fa-solid fa-right-from-bracket"></i>Sign Out
+        </NavLink>
+    </>);
+
     const loggedOutIcons = (
     <>
         <NavLink
@@ -52,13 +81,7 @@ const NavBar = () => {
 
                     {currentUser ? loggedInIcons: loggedOutIcons}
 
-                    <NavLink
-                        to="/myprofile"
-                        className={styles.NavLink}
-                        activeClassName={styles.Active}
-                    >
-                        <i className="fas fa-sign-in-alt m-1"></i>My Profile
-                    </NavLink>
+
 
                 </Nav>
             </Navbar.Collapse>

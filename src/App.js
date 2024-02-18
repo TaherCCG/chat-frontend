@@ -9,8 +9,6 @@ import MyProfile from './pages/profile/MyProfile';
 import EditProfile from './pages/profile/EditProfile';
 import ChatGptRequest from './components/ChatGptRequest';
 
-
-
 function App() {
   return (
         <div className={styles.App}>
