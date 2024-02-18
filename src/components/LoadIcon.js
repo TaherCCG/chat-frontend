@@ -1,8 +1,8 @@
 import React from "react";
 import { Spinner } from "react-bootstrap";
-import styles from "../styles/Spinner.module.css";
+import styles from "../styles/LoadIcon.module.css";
 
-const Asset = ({ spinner, src, message }) => {
+const LoadIcon = ({ spinner, src, message }) => {
   return (
     <div className={`${styles.Asset} p-4`}>
       {spinner && <Spinner animation="border" />}
@@ -12,4 +12,4 @@ const Asset = ({ spinner, src, message }) => {
   );
 };
 
-export default Asset;
+export default LoadIcon;
