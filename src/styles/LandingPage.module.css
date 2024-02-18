@@ -11,6 +11,7 @@
 }
 
 .LandingArea {
+  min-height: calc(100vh -  100px);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,24 +30,22 @@
 }
 
 .SignButton {
-
+  position: relative;
   background: #DE5C6E;
-  border-radius: 2px;
   color: #ffffff;
   padding: 15px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  width: 100%;
-  margin-top: 10px;
   font-size: 16px;
+  margin: 20px 20px 40px 20px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   transition: 0.3s;
   width: 50%;
-  margin: 10px;
+
 }
 
 .SignButton:hover {
@@ -60,10 +59,17 @@
 }
 
 .TextBox {
-  padding: 30px 20px 20px 10px;
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  border-radius: 20px;
+  box-sizing: border-box;
+  padding:  40px;
+  background-color:#f8f9fa;
+  border-radius:  20px;
+  margin: auto;
   margin-bottom: 20px;
+  width:  50%;
   text-align: center;
+  display: block;
+}
+
+.ButtonContainer {
+  margin-bottom:  60px;
 }

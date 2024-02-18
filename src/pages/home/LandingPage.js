@@ -19,10 +19,11 @@ const LandingPage = () => {
         companion for unforgettable moments. Sign up to get started!
       </p>
       </div>
-      <div>
+      <div className={appStyles.ButtonContainer}>
         <Link className={`${appStyles.SignButton} ${appStyles.Link}`} to="/signup">
           Sign Up
         </Link>
+
         <Link className={`${appStyles.SignButton} ${appStyles.Link}`} to="/signin">
             Sign in
         </Link>
