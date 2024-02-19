@@ -1,24 +1,24 @@
 import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import { useCurrentUser } from "../../context/CurrentUserContext";
+import { useHistory } from "react-router-dom";
+import { useCurrentUser } from "../context/CurrentUserContext";
 
 import { axiosRes } from "../api/axiosDefault";
 
 const useEditAccountPasswordHook = (confirm_id) => {
-  const navigate = useNavigate();
+  const history = useHistory();
 
   const currentUser = useCurrentUser();
-  const { id } = currentUser;
+  const id = currentUser?.pk;
 
   useEffect(() => {
     const controller = new AbortController();
 
     if (id !== confirm_id) {
-      navigate("/");
+      history.push("/");
     }
 
     return () => controller.abort();
-  }, [currentUser, navigate, id]);
+  }, [currentUser, history, id]);
 
   const [userData, setUserData] = useState({
     new_password1: "",
@@ -38,7 +38,7 @@ const useEditAccountPasswordHook = (confirm_id) => {
     event.preventDefault();
     try {
       await axiosRes.post("/dj-rest-auth/password/change/", userData);
-      navigate(-1);
+      history.goBack();
     } catch (err) {
       setErrors(err.response?.data);
     }

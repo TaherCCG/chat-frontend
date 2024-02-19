@@ -1,8 +1,24 @@
 import React from "react";
-import { Row, Col, Button, Container, Form } from "react-bootstrap";
+import {
+  Button,
+  Form,
+  Container,
+  Row,
+  Col,
+  Alert,
+  Card,
+} from "react-bootstrap";
 import appStyles from "../../styles/SignUpForm.module.css";
 
+import useEditAccountPasswordHook from "../../hooks/useEditAccountPasswordHk";
+import { useCurrentUser } from "../../context/CurrentUserContext";
+
 const EditProfilePassword = () => {
+  const currentUser = useCurrentUser();
+  const { pk } = currentUser;
+  const { new_password1, new_password2, errors, handleChange, handleSubmit } =
+    useEditAccountPasswordHook(pk);
+
   return (
     <Row className={appStyles.Row}>
       <Col
@@ -13,23 +29,39 @@ const EditProfilePassword = () => {
         <Container className={`${appStyles.Content} p-4 `}>
           <h1 className={appStyles.Header}>Update Password</h1>
 
-          <Form className="editForm">
-            <Form.Group className="mb-3" controlId="password">
+          <Form className="editForm" onSubmit={handleSubmit}>
+            <Form.Group className="mb-3" controlId="new_password1">
               <Form.Label>Edit Password</Form.Label>
               <Form.Control
                 type="password"
-                placeholder="New Password"
+                name="new_password1"
+                value={new_password1}
+                onChange={handleChange}
                 className={appStyles.Input}
               />
+
+              {errors.new_password1?.map((message, idx) => (
+                <Alert className="mt-3" key={idx} variant="warning">
+                  {message}
+                </Alert>
+              ))}
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="confirmPassword">
+            <Form.Group className="mb-3" controlId="new_password2">
               <Form.Label>Confirm Edit Password</Form.Label>
               <Form.Control
                 type="password"
-                placeholder="Confirm New Password"
+                name="new_password2"
+                value={new_password2}
+                onChange={handleChange}
                 className={appStyles.Input}
               />
+
+              {errors.new_password2?.map((message, idx) => (
+                <Alert className="mt-3" key={idx} variant="warning">
+                  {message}
+                </Alert>
+              ))}
             </Form.Group>
 
             <Button type="submit" className={appStyles.Button}>
