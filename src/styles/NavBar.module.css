@@ -5,8 +5,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 10px;
     height: 73px;
+    padding: 0;
   }
 
 .NavMenuLogo{
@@ -23,6 +23,14 @@
     height: 40px;
 }
 
+.DropDown{
+    background-color: #de5c6e;
+    width: fit-content;
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .NavLink {
     min-width: 100px;
@@ -55,4 +63,12 @@
         height: 55px;
         padding: 0 10px 10px 0;
     }
+
   }
+
+/*Mediaquery for screensizes wider than 768px*/
+@media screen and (min-width: 768px) { 
+  .DropDown{
+    padding: 0;
+    }
+}

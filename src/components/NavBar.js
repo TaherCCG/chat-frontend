@@ -75,10 +75,10 @@ const NavBar = () => {
         </Navbar.Brand>
       </NavLink>
 
-      <Navbar.Toggle aria-controls="basic-navbar-nav" className="m-3" />
+      <Navbar.Toggle aria-controls= "basic-navbar-nav" className="m-3" />
 
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto">
+      <Navbar.Collapse id="basic-navbar-nav" className={styles.DropDown}>
+        <Nav>
           {currentUser ? loggedInIcons : loggedOutIcons}
         </Nav>
       </Navbar.Collapse>
