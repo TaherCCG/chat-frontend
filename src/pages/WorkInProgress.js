@@ -6,7 +6,7 @@ const WorkInProgress = () => {
   return(
     <div>
       <h1>Work in Progress</h1>
-      <img className={appStyles.Test} src={wip} />
+      <img className={appStyles.Wip} src={wip} />
     </div>
   )
 };
