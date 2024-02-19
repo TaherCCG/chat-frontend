@@ -13,8 +13,8 @@ const MyProfile = () => {
   const { accountData } = useAccountHook(id);
   const { owner, image, bio } = accountData;
 
-  console.log(currentUser);
-  console.log(accountData);
+  // console.log(currentUser);
+  // console.log(accountData);
   return (
     <Container style={{ paddingTop: "60px" }}>
       <Row className="justify-content-center">
