@@ -1,5 +1,5 @@
 .AppLogo {
-    height: 30vmin;
+    height: 50vmin;
     pointer-events: none;
     padding: 25px;;
   }
@@ -11,12 +11,12 @@
 }
 
 .LandingArea {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 
@@ -73,4 +73,10 @@
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+@media screen and (min-width: 550px) {
+  .AppLogo {
+    height: 30vmin;
+  }
 }
