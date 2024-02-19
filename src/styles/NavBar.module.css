@@ -27,7 +27,7 @@
     background-color: #de5c6e;
     width: fit-content;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding-top: 10px;
     padding-bottom: 10px;
 }
