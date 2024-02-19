@@ -38,7 +38,7 @@ const MyProfile = () => {
               <Button
                 as={Link}
                 className={appStyles.EditProfileBtn}
-                to="/editprofile"
+                to="editprofile-password"
                 variant="primary"
               >
                 Edit Profile
