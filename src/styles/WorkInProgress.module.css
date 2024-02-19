@@ -1,4 +1,12 @@
+
 .Wip {
     width: 400px;
     height: 400px;
+}
+
+@media screen and (max-width: 400px){
+    .Wip {
+        width: 50%;
+        height: 50%;
+    }
 }
