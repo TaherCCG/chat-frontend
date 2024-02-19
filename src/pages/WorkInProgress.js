@@ -1,6 +1,6 @@
 import React from "react";
 import appStyles from "../styles/WorkInProgress.module.css";
-import wip from "../assets/wip.png";
+import wip from "../assets/cupid-under-construction.png";
 
 const WorkInProgress = () => {
   return(
