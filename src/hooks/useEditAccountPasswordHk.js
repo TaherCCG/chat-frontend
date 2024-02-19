@@ -1,24 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { useCurrentUser } from "../context/CurrentUserContext";
 
 import { axiosRes } from "../api/axiosDefault";
 
-const useEditAccountPasswordHook = (confirm_id) => {
+const useEditAccountPasswordHook = () => {
   const history = useHistory();
-
-  const currentUser = useCurrentUser();
-  const id = currentUser?.pk;
-
-  useEffect(() => {
-    const controller = new AbortController();
-
-    if (id !== confirm_id) {
-      history.push("/");
-    }
-
-    return () => controller.abort();
-  }, [currentUser, history, id]);
 
   const [userData, setUserData] = useState({
     new_password1: "",

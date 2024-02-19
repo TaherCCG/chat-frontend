@@ -10,7 +10,7 @@ import { Col, Row, Button, Container, Card } from "react-bootstrap";
 const MyProfile = () => {
   const currentUser = useCurrentUser();
   const id = currentUser?.pk;
-  const { accountData, error, loaded } = useAccountHook(id);
+  const { accountData } = useAccountHook(id);
   const { owner, image, bio } = accountData;
 
   console.log(currentUser);
