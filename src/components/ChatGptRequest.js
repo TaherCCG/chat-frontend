@@ -154,7 +154,7 @@ const ChatGptRequest = () => {
               />
             </Form.Group>
             {questionSent ? (
-              <Button className={appStyles.Button} disabled>
+              <Button className={appStyles.Button}>
                 Asking...
               </Button>):(
               <Button type="submit" className={appStyles.Button}><img src={logo} alt="logo"/>
@@ -166,10 +166,10 @@ const ChatGptRequest = () => {
       </Col>
         {questionUploaded ? (
           <div className={appStyles.Response}>
+            <button onClick={closeAnswerBox}><i className="fa-solid fa-heart-circle-xmark"></i></button>
             <p>{response}</p>
             <p>Love, Cupid</p>
             <p>xox</p>
-          <button onClick={closeAnswerBox}><i className="fa-solid fa-heart-circle-xmark"></i></button>
         </div>)
         :(<div> </div>)}
     </Row>

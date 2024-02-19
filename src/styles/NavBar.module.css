@@ -10,23 +10,18 @@
 
 .NavMenuLogo{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 8px;
-    width: 300px !important;
+    align-items: flex-end;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color:#FFDDCF;
+    font-family: Bellota;
 }
 
 .NavMenuLogo img{
-    height: 50px;
-    padding: 0 10px;
+    height: 40px;
 }
 
-.NavMenuLogo p{
-    margin: 0;
-    font-family: Bellota;
-    font-size: 35px;
-    color: #FFDDCF;
-}
 
 .NavLink {
     min-width: 100px;
@@ -37,7 +32,6 @@
     text-decoration: none;
     align-items: center;
     color:#FFDDCF;
-    margin: 5px 10px;
     border-radius: 10px;
 }
 
@@ -49,3 +43,15 @@
     font-size: 20px;
 }
 
+/*Mediaquery for screensizes wider than 400px*/
+@media screen and (min-width: 400px) {
+    .NavMenuLogo{
+        width: 300px !important;
+        font-size: 35px;
+    }
+
+    .NavMenuLogo img{
+        height: 55px;
+        padding: 0 10px 10px 0;
+    }
+  }

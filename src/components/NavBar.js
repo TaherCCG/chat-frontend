@@ -68,7 +68,7 @@ const NavBar = () => {
             >
                 <Navbar.Brand className={styles.NavMenuLogo}>
                     <img src={logo} alt="logo" height="45" />
-                    <p>AskCupid</p>
+                    AskCupid
                 </Navbar.Brand>
             </NavLink>
 
