@@ -15,6 +15,9 @@ Welcome to Team2's app for the Hackathon competition — an extraordinary ventur
 
 **Introducing Ask Cupid!** Your ultimate companion for creating unforgettable moments. Whether you're searching for the perfect gift or planning a dreamy holiday, Ask Cupid is here to inspire and guide you.
 
+See our backend [here](https://valantines-drf-8626efa242cc.herokuapp.com/)
+See our active project [here](https://askcupid.netlify.app/)
+
 ## What Ask Cupid Offers:
 
 - **Tailored Gift Suggestions:**
@@ -400,8 +403,15 @@ Our agile approach ensured that we remained flexible and responsive to project n
 
 <a id="testing"></a>
 
+<a id="testing"></a>
+
+### Credits
+
+- [Freepik](https://www.freepik.com/) - Used to retrieve images
+- [FontAwesome](https://fontawesome.com/) - Used for icons
+
 # Testing
 
-Application has been manually tested to ensure responsivnes on varios screensizes. 
+Application has been manually tested to ensure responsivness on varios screensizes. 
 
 <a id="testing"></a>
