@@ -293,8 +293,8 @@ This is where the magic continues, where you log in to cherish memories. Our log
 
 # The Question Page
 
-<img src="src/assets/images/question-form.png" alt="Question Page" width="300">
-<img src="src/assets/images/question-form.png" alt="Question Page" width="300">
+<img src="src/assets/images/question-form.png" alt="Question Page" width="200">
+<img src="src/assets/images/answer.png" alt="Question Page" width="200">
 
 ### Ask Cupid Question Page
 - Welcome to the heart of Ask Cupid — the Question Page, where the magic happens. This is the space where you provide information about your partner, and Ask Cupid works its enchantment to turn your surprise into perfection.
@@ -377,8 +377,6 @@ Our agile approach ensured that we remained flexible and responsive to project n
 - **Languages used:**
 - **HTML:** Used for structuring the web pages.
 - **CSS:** Employed for styling and layout.
-- **React:** JavaScript library utilized for building the interactive user interface.
-- **Bootstrap:** Front-end framework for responsive and visually appealing design.
 - **Python:** Backend programming language for server-side development.
 - **Chakra UI:** React component library for building accessible and customizable UI components.
 
@@ -389,38 +387,21 @@ Our agile approach ensured that we remained flexible and responsive to project n
 - Balsamiq : Used for creating wireframes.
 - VsCode : Used to code.
 - Github : Employed for code deployment.
+- Netifly: Used to deploy frontend application made with React.
+- Heroku: Used to deploye backend API application made with Django Rest Framework.
 - Am I Responsive: Employed for testing and ensuring responsiveness.
 
 <a id="frameworks-libaries"></a>
 
 ### Frameworks & Libaries
+- **React:** JavaScript library utilized for building the interactive user interface.
+- **React Bootstrap:** Front-end framework used together with React responsive and visually appealing design.
+- **Django Rest Framework:** JavaScript library utilized for building the interactive user interface.
 
 <a id="testing"></a>
 
 # Testing
 
-<a id="manual-testing"></a>
+Application has been manually tested to ensure responsivnes on varios screensizes. 
 
-### Manual Testing
-
-<a id="lighthouse"></a>
-
-### Lighthouse
-
-<a id="browser-test"></a>
-
-### Browser Test
-
-<a id="validation"></a>
-
-### Validation
-
-<a id="bugs "></a>
-
-### Bugs
-
-| Bug         | Status       | Description        | Steps To Resolve |
-| ----------- | ------------ | ------------------ | ---------------- |
-| Issue       | ~~Resolved~~ | Everythings fucked | Correct it       |
-| Issue       | Ungoing      | Everythings fucked | Dont know        |
-| Im a newbie | Ungoing      | I can´t do shit    | Teach me         |
+<a id="testing"></a>
