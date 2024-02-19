@@ -4,10 +4,22 @@ import { useCurrentUser } from "../../context/CurrentUserContext";
 
 import { axiosRes } from "../api/axiosDefault";
 
-const useEditAccountPasswordHook = (id) => {
+const useEditAccountPasswordHook = (confirm_id) => {
   const navigate = useNavigate();
 
   const currentUser = useCurrentUser();
+  const { id } = currentUser;
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    if (id !== confirm_id) {
+      navigate("/");
+    }
+
+    return () => controller.abort();
+  }, [currentUser, navigate, id]);
+
   const [userData, setUserData] = useState({
     new_password1: "",
     new_password2: "",
