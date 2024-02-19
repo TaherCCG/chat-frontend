@@ -67,23 +67,6 @@ function SignInForm () {
               </Alert>
             ))}
 
-            <Form.Group  className="mb-3" controlId="email">
-              <Form.Label className="d-none">Email</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Email"
-                name="email"
-                className={appStyles.Input}
-                value={email}
-                onChange={handleChange}
-              />
-            </Form.Group>
-            {errors?.email?.map((message, idx) => (
-              <Alert key={idx} variant="warning">
-                {message}
-              </Alert>
-            ))}
-
             <Form.Group  className="mb-3" controlId="password">
               <Form.Label className="d-none">Password</Form.Label>
               <Form.Control
