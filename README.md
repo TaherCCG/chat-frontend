@@ -1,6 +1,11 @@
+
+<div align=center>
+
 # Welcome to Ask Cupid :heart:
 
-<p style="display: flex ;align-items: center; font-size: 24px;"><img src="src/cupid.png"  width="150"> Ask Cupid </p>
+<img src="./src/assets/images/amiresponsive.png"  width="600">
+
+</div>
 
 <a id=introduction></a>
 
@@ -30,7 +35,6 @@ What are you waiting for? Sign up now, enter your partner's information, and let
 **Table of content:**
 
 - [Introduction](#introduction)
-- [Am I Responsive](#responsive)
 - [UX](#ux)
   - [The Strategy](#the-strategy)
   - [The Scope](#the-scope)
@@ -70,10 +74,6 @@ What are you waiting for? Sign up now, enter your partner's information, and let
   - [Images](#images)
   - [Thank You](#thank-you)
 - [The Team](#team)
-
-<a id=responsive></a>
-
-### Am I Responsive?
 
 <a id=ux></a>
 
@@ -293,7 +293,8 @@ This is where the magic continues, where you log in to cherish memories. Our log
 
 # The Question Page
 
-<img src="src/assets/images/question.png" alt="Question Page" width="400">
+<img src="src/assets/images/question-form.png" alt="Question Page" width="300">
+<img src="src/assets/images/question-form.png" alt="Question Page" width="300">
 
 ### Ask Cupid Question Page
 - Welcome to the heart of Ask Cupid — the Question Page, where the magic happens. This is the space where you provide information about your partner, and Ask Cupid works its enchantment to turn your surprise into perfection.
