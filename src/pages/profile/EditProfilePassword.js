@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Form,
-  Container,
-  Row,
-  Col,
-  Alert,
-  Card,
-} from "react-bootstrap";
+import { Button, Form, Container, Row, Col, Alert } from "react-bootstrap";
 import appStyles from "../../styles/SignUpForm.module.css";
 
 import useEditAccountPasswordHook from "../../hooks/useEditAccountPasswordHk";
@@ -15,9 +7,9 @@ import { useCurrentUser } from "../../context/CurrentUserContext";
 
 const EditProfilePassword = () => {
   const currentUser = useCurrentUser();
-  const { pk } = currentUser;
+  // const { pk } = currentUser;
   const { new_password1, new_password2, errors, handleChange, handleSubmit } =
-    useEditAccountPasswordHook(pk);
+    useEditAccountPasswordHook();
 
   return (
     <Row className={appStyles.Row}>
