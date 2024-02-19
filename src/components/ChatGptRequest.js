@@ -19,8 +19,8 @@ const ChatGptRequest = () => {
     setQuestionSent(true)
     e.preventDefault();
     // Update preset just before submitting
-    const updatedPreset = `Respond to this as if you are Cupid: My ${relationship} is a ${personType} ${age} year old who loves ${loves}.
-    Really tailor the answer to my next question to them focusing on their age, likes, and gender.
+    const updatedPreset = `Respond to this as if you are Cupid and you are writing an instructional letter to me, to make my ${relationship} happy: My ${relationship} is a ${personType} ${age} year old who loves ${loves}.
+    Really tailor your answer to my next question so that the focus is on their age, likes, and gender.
     Start out your answer by explaining why it is well suited to them.`;
     // Call your serverless function here with the updatedPreset
     const fetchedResponse = await fetch("/.netlify/functions/chatgpt", {
