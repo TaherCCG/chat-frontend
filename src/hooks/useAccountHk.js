@@ -3,7 +3,7 @@ import { axiosReq } from "../api/axiosDefault";
 import { CanceledError } from "axios";
 import { useAccountData } from "../context/AccountDataContext";
 
-const useAccountData = (id) => {
+const useAccountHook = (id) => {
   const { accountData, setAccountData } = useAccountData();
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState("");
@@ -37,4 +37,4 @@ const useAccountData = (id) => {
   };
 };
 
-export default useAccountData;
+export default useAccountHook;
