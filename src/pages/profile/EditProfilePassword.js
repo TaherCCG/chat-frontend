@@ -3,11 +3,8 @@ import { Button, Form, Container, Row, Col, Alert } from "react-bootstrap";
 import appStyles from "../../styles/SignUpForm.module.css";
 
 import useEditAccountPasswordHook from "../../hooks/useEditAccountPasswordHk";
-import { useCurrentUser } from "../../context/CurrentUserContext";
 
 const EditProfilePassword = () => {
-  const currentUser = useCurrentUser();
-  // const { pk } = currentUser;
   const { new_password1, new_password2, errors, handleChange, handleSubmit } =
     useEditAccountPasswordHook();
 
