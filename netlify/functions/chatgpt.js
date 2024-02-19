@@ -11,7 +11,7 @@ const openai = new OpenAI({
     const completion = await openai.chat.completions.create({
       model: "gpt-3.5-turbo",
       messages: [
-        { role: "system", content: "systemMessage" },
+        { role: "system", content: systemMessage },
         { role: "user", content: preset },
         { role: "user", content: question },
       ],
