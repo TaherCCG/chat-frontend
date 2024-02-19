@@ -21,7 +21,7 @@ const ChatGptRequest = () => {
     // Update preset just before submitting
     const updatedPreset = `Respond to this as if you are Cupid and you are writing an instructional letter to me, to make my ${relationship} happy: My ${relationship} is a ${personType} ${age} year old who loves ${loves}.
     Really tailor your answer to my next question so that the focus is on their age, likes, and gender.
-    Start out your answer by explaining why it is well suited to them. Sign off each letter! Format the letter so that greeting and sign off are on new lines.`;
+    Start out your answer by explaining why it is well suited to them. Don't sign off the letters.`;
     // Call your serverless function here with the updatedPreset
     const fetchedResponse = await fetch("/.netlify/functions/chatgpt", {
       method: "POST",
