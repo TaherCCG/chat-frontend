@@ -381,7 +381,6 @@ Our agile approach ensured that we remained flexible and responsive to project n
 - **HTML:** Used for structuring the web pages.
 - **CSS:** Employed for styling and layout.
 - **Python:** Backend programming language for server-side development.
-- **Chakra UI:** React component library for building accessible and customizable UI components.
 
 <a id="tools"></a>
 
