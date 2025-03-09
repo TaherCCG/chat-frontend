@@ -1,6 +1,11 @@
+
+<div align=center>
+
 # Welcome to Ask Cupid :heart:
 
-<p style="display: flex ;align-items: center; font-size: 24px;"><img src="src/cupid.png"  width="150"> Ask Cupid </p>
+<img src="./src/assets/images/amiresponsive.png"  width="600">
+
+</div>
 
 <a id=introduction></a>
 
@@ -9,6 +14,9 @@
 Welcome to Team2's app for the Hackathon competition — an extraordinary venture that aims to elevate your connections and redefine your gifting experiences. Our app goes beyond the ordinary, providing tailored suggestions for both gifts and dreamy holiday destinations.
 
 **Introducing Ask Cupid!** Your ultimate companion for creating unforgettable moments. Whether you're searching for the perfect gift or planning a dreamy holiday, Ask Cupid is here to inspire and guide you.
+
+See our backend [here](https://valantines-drf-8626efa242cc.herokuapp.com/)
+See our active project [here](https://askcupid.netlify.app/)
 
 ## What Ask Cupid Offers:
 
@@ -30,7 +38,6 @@ What are you waiting for? Sign up now, enter your partner's information, and let
 **Table of content:**
 
 - [Introduction](#introduction)
-- [Am I Responsive](#responsive)
 - [UX](#ux)
   - [The Strategy](#the-strategy)
   - [The Scope](#the-scope)
@@ -70,10 +77,6 @@ What are you waiting for? Sign up now, enter your partner's information, and let
   - [Images](#images)
   - [Thank You](#thank-you)
 - [The Team](#team)
-
-<a id=responsive></a>
-
-### Am I Responsive?
 
 <a id=ux></a>
 
@@ -293,7 +296,8 @@ This is where the magic continues, where you log in to cherish memories. Our log
 
 # The Question Page
 
-<img src="src/assets/images/question.png" alt="Question Page" width="400">
+<img src="src/assets/images/question-form.png" alt="Question Page" width="200">
+<img src="src/assets/images/answer.png" alt="Question Page" width="200">
 
 ### Ask Cupid Question Page
 - Welcome to the heart of Ask Cupid — the Question Page, where the magic happens. This is the space where you provide information about your partner, and Ask Cupid works its enchantment to turn your surprise into perfection.
@@ -376,10 +380,7 @@ Our agile approach ensured that we remained flexible and responsive to project n
 - **Languages used:**
 - **HTML:** Used for structuring the web pages.
 - **CSS:** Employed for styling and layout.
-- **React:** JavaScript library utilized for building the interactive user interface.
-- **Bootstrap:** Front-end framework for responsive and visually appealing design.
 - **Python:** Backend programming language for server-side development.
-- **Chakra UI:** React component library for building accessible and customizable UI components.
 
 <a id="tools"></a>
 
@@ -388,38 +389,28 @@ Our agile approach ensured that we remained flexible and responsive to project n
 - Balsamiq : Used for creating wireframes.
 - VsCode : Used to code.
 - Github : Employed for code deployment.
+- Netifly: Used to deploy frontend application made with React.
+- Heroku: Used to deploye backend API application made with Django Rest Framework.
 - Am I Responsive: Employed for testing and ensuring responsiveness.
 
 <a id="frameworks-libaries"></a>
 
 ### Frameworks & Libaries
+- **React:** JavaScript library utilized for building the interactive user interface.
+- **React Bootstrap:** Front-end framework used together with React responsive and visually appealing design.
+- **Django Rest Framework:** JavaScript library utilized for building the interactive user interface.
 
 <a id="testing"></a>
 
+<a id="testing"></a>
+
+### Credits
+
+- [Freepik](https://www.freepik.com/) - Used to retrieve images
+- [FontAwesome](https://fontawesome.com/) - Used for icons
+
 # Testing
 
-<a id="manual-testing"></a>
+Application has been manually tested to ensure responsivness on varios screensizes. 
 
-### Manual Testing
-
-<a id="lighthouse"></a>
-
-### Lighthouse
-
-<a id="browser-test"></a>
-
-### Browser Test
-
-<a id="validation"></a>
-
-### Validation
-
-<a id="bugs "></a>
-
-### Bugs
-
-| Bug         | Status       | Description        | Steps To Resolve |
-| ----------- | ------------ | ------------------ | ---------------- |
-| Issue       | ~~Resolved~~ | Everythings fucked | Correct it       |
-| Issue       | Ungoing      | Everythings fucked | Dont know        |
-| Im a newbie | Ungoing      | I can´t do shit    | Teach me         |
+<a id="testing"></a>
